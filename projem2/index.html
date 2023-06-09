@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <!-- GEÇİŞ BUTONLARI START -->
+
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toggle-btn" onclick="login()">
+            Giriş yap
+          </button>
+          <button type="button" class="toggle-btn" onclick="register()">
+            Kayıt ol
+          </button>
+        </div>
+
+        <!-- GEÇİŞ BUTONLARI END -->
+
+        <!-- SOSYAL İKONLAR START -->
+
+        <div class="social-icons">
+          <img src="fb.png" />
+          <img src="gp.png" />
+          <img src="tw.png" />
+        </div>
+
+        <!-- SOSYAL İKONLAR END -->
+
+        <!-- LOGİN PAGE START -->
+
+        <form id="login" class="input-group">
+          <input
+            type="text"
+            id="kullaniciadi"
+            class="input-field"
+            placeholder="Kullanıcı adı"
+            required
+          />
+          <i class="uil uil-eye-slash ShowHidePw"></i>
+          <input
+            type="password"
+            class="input-field sifre"
+            placeholder="Şifre"
+            required
+          />
+          <input type="checkbox" class="chech-box" />
+          <span id="yazilar">Beni Hatırla</span>
+          <span id="sifremiunuttum"><a href="#">Şifremi Unuttum</a></span>
+          <button type="submit" id="girisyapbtn" class="submit-btn">
+            Giriş yap
+          </button>
+        </form>
+
+        <!-- LOGİN PAGE END -->
+
+        <!-- REGİSTER PAGE START -->
+
+        <form id="register" class="input-group">
+          <input
+            type="text"
+            class="input-field"
+            placeholder="Kullanıcı adı"
+            required
+          />
+          <input
+            type="email"
+            class="input-field"
+            placeholder="Email"
+            required
+          />
+          <i class="uil uil-eye-slash ShowHidePw"></i>
+          <input
+            type="password"
+            class="input-field sifre"
+            placeholder="Şifre"
+            required
+          />
+          <input type="checkbox" id="KvkCheckbox" class="chech-box" />
+          <span id="yazilar1"
+            ><a href="#">Kişisel Verilerin Korunması</a> metnini okudum ve kabul
+            ediyorum.</span
+          >
+          <button type="submit" id="kaydolbtn" class="submit-btn">
+            Kayıt ol
+          </button>
+        </form>
+
+        <!-- REGİSTER PAGE END -->
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
